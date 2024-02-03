@@ -1,6 +1,7 @@
-express = require('express');
+
+const express = require('express');
 const app = express();
-const port = 4000;
+const port = 3000;
 
 app.get('/', (req, res) => {
     res.send('Bem-vindo ao servidor!');
@@ -9,3 +10,5 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log(`Servidor está rodando em http://localhost:${port}`);
 });
+
+module.exports = app; 
